@@ -1,4 +1,6 @@
+
 baseURL: "http://nzjamaat.org/"
 languageCode: "en-us"
 title: "Anjuman-e-Safiee (New Zealand)"
 googleAnalytics: "UA-109421898-1"
+publishDir = "docs"
