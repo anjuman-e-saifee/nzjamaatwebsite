@@ -1,93 +1,4 @@
-<!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109421898-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-109421898-1');
-	</script>
-
-	<!--- basic page needs
-   ================================================== -->
-	<meta charset="utf-8">
-	<title>Anjuman-e-Safiee (New Zealand)</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/vendor.css">
-	<link rel="stylesheet" href="css/main.css">
-
-	<!-- script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-
-	<!-- favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-</head>
-
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
-	<header>
-
-		<div class="header-logo">
-			<a href="index.html">Anjuman-e-Safiee (New Zealand)</a>
-		</div>
-
-		<a id="header-menu-trigger" href="#0">
-			<span class="header-menu-text">Menu</span>
-			<span class="header-menu-icon"></span>
-		</a>
-
-		<nav id="menu-nav-wrap">
-
-			<a href="#0" class="close-button" title="close">
-				<span>Close</span>
-			</a>
-
-			<h3>Anjuman-e-Safiee</h3>
-
-			<ul class="nav-list">
-				<li class="current">
-					<a class="smoothscroll" href="#home" title="">Home</a>
-				</li>
-				<li>
-					<a class="smoothscroll" href="#about" title="">About</a>
-				</li>
-				<li>
-					<a class="smoothscroll" href="#services" title="">Services</a>
-				</li>
-				<li>
-					<a class="smoothscroll" href="#contact" title="">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- end #menu-nav-wrap -->
-	</header>
-	<!-- end header -->
-
-
+{{ partial "header.html" }}
 	<!-- home
    ================================================== -->
 	<section id="home">
@@ -98,12 +9,8 @@
 			<div class="home-content-tablecell">
 				<div class="row">
 					<div class="col-twelve">
-						<h3 class="animate-intro">We Are Anjuman-e-Safiee
-							<br> New Zealand</h3>
-						<!-- <h1 class="animate-intro">
-							We Craft Stunning  <br>
-							Digital Experiences.
-				  			</h1>	 -->
+						<h1 class="animate-intro">Anjuman-e-Safiee</h1>
+						<h3>New Zealand</h3>
 
 						<div class="more animate-intro">
 							<a class="smoothscroll button stroke" href="#about">
@@ -130,7 +37,6 @@
 	</section>
 	<!-- end home -->
 
-
 	<!-- about
    ================================================== -->
 	<section id="about">
@@ -154,7 +60,6 @@
 
 	</section>
 	<!-- end about -->
-
 
 	<!-- about
    ================================================== -->
@@ -307,48 +212,6 @@
 	</section>
 	<!-- end contact -->
 
-
 	<!-- footer
    ================================================== -->
-	<footer>
-		<div class="footer-main">
-		</div>
-		<!-- end footer-main -->
-
-		<div class="footer-bottom">
-
-			<div class="row">
-
-				<div class="col-twelve">
-					<div class="copyright">
-						<span>© Copyright Anjuman-e-Safiee (New Zealand).</span>
-						<span>Design by
-							<a href="http://www.styleshout.com/">styleshout</a>
-						</span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- end footer-bottom -->
-
-		<div id="go-top">
-			<a class="smoothscroll" title="Back to Top" href="#top">
-				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-			</a>
-		</div>
-	</footer>
-
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
-
-	<!-- Java Script
-   ================================================== -->
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	{{ partial "footer.html"}}
