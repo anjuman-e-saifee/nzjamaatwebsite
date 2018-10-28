@@ -405,9 +405,9 @@
 		ssFitVids();
 		ssMasonryFolio();
 		ssLightGallery();
-		ssFlexSlider();
+		// ssFlexSlider();
 		ssOwlCarousel();
-		ssMenuOnScrolldown();
+		//ssMenuOnScrolldown();
 		ssOffCanvas();
 		ssSmoothScroll();
 		ssPlaceholder();

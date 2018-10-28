@@ -1,0 +1,57 @@
+{{ partial "header" . }}
+<style type="text/css" media="screen">
+    #styles {
+        background: white;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+</style>
+
+	<!-- home
+   ================================================== -->
+   <section id="services">
+
+		<div class="overlay"></div>
+		<div class="gradient-overlay"></div>
+
+		<div class="row section-intro animate-this">
+			<div class="col-full">
+
+				<h1>Recent news & events</h1>
+
+			</div>
+			<!-- end col-full -->
+		</div>
+
+
+	</section>
+	<!-- end home -->
+
+<!-- styles ================================================== -->
+<section id="styles">
+
+    <div class="row narrow add-bottom text-center">
+
+        <div class="col-twelve tab-full">
+            <h1>Recent events</h1>
+        </div>
+
+    </div>
+    {{ range .Data.Pages }}
+
+    <div class="row">
+        <div class="tab-full">
+
+            <h3><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></h3>
+
+            <p class="drop-cap">{{ .Summary}}</p>
+        </div>
+
+    </div> <!-- end row -->
+    {{ end }}
+
+</section> <!-- end styles -->
+
+{{ partial "contact" .}}
+
+{{ partial "footer" . }}

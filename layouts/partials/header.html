@@ -19,7 +19,11 @@
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="utf-8">
-	<title>Anjuman-e-Safiee (New Zealand)</title>
+	{{if .IsHome }}
+	<title>{{.Title}}</title>
+	{{ else }}
+	<title>{{.Title}} - {{.Site.Title}}</title>
+	{{ end }}
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -29,14 +33,14 @@
 
 	<!-- CSS
    ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/vendor.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/vendor.css">
+	<link rel="stylesheet" href="/css/main.css">
 
 	<!-- script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+	<script src="/js/modernizr.js"></script>
+	<script src="/js/pace.min.js"></script>
 
 	<!-- favicons
 	================================================== -->
@@ -55,7 +59,7 @@
 			<a href="index.html">Anjuman-e-Safiee (New Zealand)</a>
 		</div>
 
-		<a id="header-menu-trigger" href="#0">
+		<a id="header-menu-trigger" class="opaque" href="#0">
 			<span class="header-menu-text">Menu</span>
 			<span class="header-menu-icon"></span>
 		</a>
@@ -78,6 +82,14 @@
 				<li>
 					<a class="smoothscroll" href="#services" title="">Services</a>
 				</li>
+
+				{{ $posts := (where .Data.Pages "Type" "==" "posts") }}
+
+				{{if gt (len $posts) 0 }}				
+				<li>
+					<a class="smoothscroll" href="#testimonials" title="">News & Events</a>
+				</li>
+				{{end}}
 				<li>
 					<a class="smoothscroll" href="#contact" title="">Contact</a>
 				</li>

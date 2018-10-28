@@ -2282,7 +2282,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #testimonials {
   background: #FFFFFF;
   padding: 12rem 0 7.8rem;
-  text-align: center;
+  /* text-align: center; */
 }
 #testimonials h2 {
   font-family: "montserrat-bold", sans-serif;
@@ -2327,7 +2327,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: '\201D';
 }
 #testimonial-slider .testimonial-author {
-  margin-top: 4.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 4.2rem;
 }
 #testimonial-slider .testimonial-author img {
   width: 7.4rem;
