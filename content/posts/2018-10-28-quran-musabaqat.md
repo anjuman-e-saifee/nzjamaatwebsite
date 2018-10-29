@@ -1,7 +1,7 @@
 ---
 title: "Hifzul Quraan il Kareem nu Musabaqat in Auckland - New Zealand"
 date: 2018-10-28T14:59:25+13:00
-draft: true
+draft: false
 ---
 <p class="drop-cap">Hafiz ul Quran Moula Ad Dai il ajal al hayyul Muqaddas <span>Syedna Mohammad Burhanuddin(RA)</span> na janasheen aney mansoos Al Dai il ajal <span>Syedna Abu Jaffar us Sadiq Aali Qadar Muffadal Saifuddin(TUS)</span> ni masaai jalila na sabab Hifzul Quran il Kareem waastey Aalame Imaan ma nashaat adha’fan mudhaa’fa thayo.</p>
 
