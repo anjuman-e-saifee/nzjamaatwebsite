@@ -195,7 +195,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  /* content: "\201C"; */
   font-size: 10rem;
   line-height: 0px;
   margin: 0;
