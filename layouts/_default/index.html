@@ -163,7 +163,7 @@
 </section>
 <!-- end services -->
 
-{{ $posts := (where .Data.Pages "Type" "==" "posts") }}
+{{ $posts := (where .Site.Pages "Type" "==" "posts") }}
 
 {{if gt (len $posts) 0 }}
 
@@ -186,7 +186,7 @@
         <div id="testimonial-slider" class="flex-slider animate-this">
 
             <ul class="slides">
-                {{ range where .Data.Pages "Type" "posts" }}
+                {{ range first 1 (where (where .Site.Pages "Type" "==" "posts") "IsSection" false) }}
 
                 <li>
                     <a href="{{ .Permalink }}"> {{ .Title }}</a>
