@@ -1539,6 +1539,14 @@ header .header-logo a {
   background-color: #19191b;
 }
 
+#home .lead {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  margin-top: 4rem;
+}
+
 .home-content-table {
   width: 100%;
   height: 100%;
@@ -1968,6 +1976,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .services-list .h05 {
   font-size: 1.7rem;
   line-height: 1.765;
+  color: #FFFFFF;
+}
+
+#services .services-list .h06 {
+  font-size: 1.3rem;
+  line-height: 1.85;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
   color: #FFFFFF;
   margin-bottom: 3rem;
 }

@@ -82,16 +82,11 @@
 					<a class="smoothscroll" href="#about" title="">About</a>
 				</li>
 				<li>
-					<a class="smoothscroll" href="#services" title="">Services</a>
+					<a class="smoothscroll" href="#services" title="">Who are we</a>
 				</li>
-
-				{{ $posts := (where .Data.Pages "Type" "==" "posts") }}
-
-				{{if gt (len $posts) 0 }}				
 				<li>
-					<a class="smoothscroll" href="#testimonials" title="">News & Events</a>
+					<a class="smoothscroll" href="#portfolio" title="">Project Rise</a>
 				</li>
-				{{end}}
 				<li>
 					<a class="smoothscroll" href="#contact" title="">Contact</a>
 				</li>
