@@ -1166,7 +1166,7 @@ input::-moz-focus-inner {
   display: inline-block;
   height: 1px;
   width: 200px;
-  background-color: rgba(242, 242, 242, 0.1);
+  background-color: #f9a828;
   text-align: center;
 }
 
