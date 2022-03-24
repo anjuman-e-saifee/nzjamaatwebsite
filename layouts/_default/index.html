@@ -200,6 +200,48 @@
 </section>
 <!-- end services -->
 
+{{ $posts := (where .Site.Pages "Type" "==" "posts") }}
+
+{{if gt (len $posts) 0 }}
+
+<!-- Testimonials Section
+   ================================================== -->
+<section id="testimonials">
+
+    <div class="intro-wrap">
+
+        <div class="row narrow section-intro with-bottom-sep animate-this">
+            <div class="col-twelve">
+                <h1>Recent News & Events.</h1>
+            </div>
+        </div> <!-- end row section-intro -->
+
+    </div> <!-- end intro-wrap -->
+
+    <div class="row flex-container">
+
+        <div id="testimonial-slider" class="flex-slider animate-this">
+
+            <ul class="slides">
+                {{ range first 3 (where (where .Site.Pages "Type" "==" "posts") "IsSection" false) }}
+
+                <li>
+                    <a href="{{ .Permalink }}"> {{ .Title }}</a>
+
+                    <div class="testimonial-author">
+                        {{ .Summary }}
+                    </div>
+                </li> <!-- end slide -->
+                {{ end }}
+            </ul> <!-- end slides -->
+
+        </div> <!-- end testimonial-slider -->
+
+    </div> <!-- end flex-container -->
+
+</section> <!-- end testimonials -->
+{{end}} <!-- End If -->
+
 <!-- portfolio
    ================================================== -->
 <section id="portfolio">
