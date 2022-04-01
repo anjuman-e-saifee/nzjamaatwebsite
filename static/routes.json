@@ -1,8 +1,15 @@
 {
     "platformErrorOverrides": [
         {
-        "errorType": "NotFound",
-        "serve": "/404.html"
+            "errorType": "NotFound",
+            "serve": "/404.html"
+        }
+    ],
+    "routes": [
+        {
+            "route": "/login",
+            "redirect": "http://nzjms.azurewebsites.net/app_Login/",
+            "statusCode": 301
         }
     ]
 }
