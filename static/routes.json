@@ -8,7 +8,7 @@
     "routes": [
         {
             "route": "/login",
-            "redirect": "http://nzjms.azurewebsites.net/app_Login/",
+            "rewrite": "http://nzjms.azurewebsites.net/app_Login/",
             "statusCode": 301
         }
     ]
