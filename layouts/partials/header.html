@@ -46,6 +46,29 @@
 	<script type="text/javascript"
 		src="https://app.termly.io/resource-blocker/e199c89b-d955-4856-98d7-a6ad9fb0f4c0?autoBlock=on"></script>
 
+	<script type="text/javascript">
+		function hideMenuOnNonHomePage() {
+			console.log('hideMenuOnNonHomePage')
+			// Get the current URL path
+			const currentPath = window.location.pathname;
+
+			// Check if the current path is not the home page
+			if (currentPath !== '/' && currentPath !== '/index.html') {
+				// Get the element by ID
+				const menuElement = document.getElementById('menu-nav-wrap');
+				const menuTrigger = document.getElementById('header-menu-trigger')
+				// Hide the element if it exists
+				if (menuElement) {
+					menuElement.style.display = 'none';
+					menuTrigger.style.display = 'none';
+				}
+			}
+		}
+
+		// Call the function on page load
+		window.onload = hideMenuOnNonHomePage;
+
+	</script>
 </head>
 
 <body id="top">
